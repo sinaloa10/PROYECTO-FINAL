@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./menu.css" />
+    <title>Tienda en línea</title>
+</head>
+
+<body>
+    <div class="header">
+        <a href="../index.html"><img src="/logo.png" alt="Mercado Libre" class="logo"></a>
+        <div class="search">
+            <input type="text" name="search" placeholder="Buscar productos, marcas y más...">
+            <button type="submit"><i class="fas fa-search"></i></button>
+        </div>
+        <div class="categories">
+            <i class="fas fa-bars"></i>
+            <span>Categorías</span>
+        </div>
+        <div class="cart">
+            <i class="fas fa-shopping-cart"></i>
+            <span>Mi carrito</span>
+        </div>
+    </div>
+    <div class="body">
+        <div class="product">
+            <img src="/lap1.png" alt="Laptop Dell Inspiron 3525 Ryzen 5 8gb 512ssd Win11 Plata">
+            <h3>Laptop Dell Inspiron 3525 Ryzen 5 8gb 512ssd Win11 Plata</h3>
+            <p>$ 9,999</p>
+            <span><i class="fas fa-star"></i>4.8 (41)</span>
+            <button onclick="showModal()"  type="button">Comprar</button>
+        </div>
+        <div class="product">
+            <img src="/cel1.png" alt="Smartphone Motorola Moto G71 6.4'' 128gb + 6gb Ram 5g Android 11">
+            <h3>Smartphone Motorola Moto G71 6.4'' 128gb + 6gb Ram 5g Android 11</h3>
+            <p>$ 3,199</p>
+            <span><i class="fas fa-star"></i>5.0 (3)</span>
+            <button onclick="showModal()" type="button">Comprar</button>
+        </div>
+        <div class="product">
+            <img src="/tv.png" alt="Pantalla Tcl 55'' 55s453 4 Series 4k Uhd Hdr Led Roku Tv">
+            <h3>Pantalla Tcl 55'' 55s453 4 Series 4k Uhd Hdr Led Roku Tv</h3>
+            <p>$ 6,279</p>
+            <span><i class="fas fa-star"></i>4.9 (50)</span>
+            <button onclick="showModal()" type="button">Comprar</button>
+        </div>
+        <div class="product">
+            <img src="/tenis.png" alt="Tenis adidas Coreracer Running Cómodos Y Versátiles Mujer">
+            <h3>Tenis adidas Coreracer Running Cómodos Y Versátiles Mujer</h3>
+            <p>$ 699</p>
+            <span><i class="fas fa-star"></i>4.9 (46)</span>
+            <button onclick="showModal()" type="button">Comprar</button>
+        </div>
+        
+    </div>
+    <div class="footer">
+        <ul>
+            <li><a href="#">Ayuda</a></li>
+            <li><a href="#">Seguridad</a></li>
+            <li><a href="#">Términos y condiciones</a></li>
+            <li><a href="#">Privacidad</a></li>
+        </ul>
+        <div class="social">
+            <a href="#"><img src="/facebook.svg" alt="Facebook"></a>
+            <a href="#"><img src="/twitter.jpg" alt="Twitter"></a>
+            <a href="#"><img src="/instagram.png" alt="Instagram"></a>
+        </div>
+    </div>
+
+
+     <!-- Agregamos un modal para mostrar la interfaz después de comprar -->
+     <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Compra exitosa</h2>
+            <p>Gracias por tu compra. Aquí se mostrarán tus artículos comprados anteriormente.</p>
+            <!-- Aquí puedes agregar el contenido de los artículos comprados -->
+        </div>
+    </div>
+
+    <script>
+        // Función para mostrar el modal después de presionar el botón "Comprar"
+        function showModal() {
+            var modal = document.getElementById("modal");
+            modal.style.display = "block";
+        }
+
+        // Función para cerrar el modal
+        function closeModal() {
+            var modal = document.getElementById("modal");
+            modal.style.display = "none";
+        }
+    </script>
+</body>
+</html>

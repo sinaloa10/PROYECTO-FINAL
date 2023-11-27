@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="register.css" />
+  <title>Vite App</title>
+</head>
+
+<body>
+  <div class="container">
+    <a href="/index.html"><img src="/logo.png" alt="Mercado Libre" class="logo"></a>
+    <div class="form">
+      <h2>Crear cuenta</h2>
+      <p>Ingresa tus datos para registrarte</p>
+      <form action="http://localhost:5173/registro/register.html" method="POST">
+        <input type="text" name="name" placeholder="Nombre" required>
+        <input type="text" name="lastname" placeholder="Apellido" required>
+        <input type="email" name="email" placeholder="Correo electrónico" required>
+        <input type="password" name="password" placeholder="Contraseña" required>
+        <button type="submit">Registrarme</button>
+      </form>
+      <a href="#">¿Ya tienes una cuenta? Inicia sesión</a>
+      <a href="#">Regístrate con Facebook</a>
+    </div>
+  </div>
+</body>
+
+</html>
